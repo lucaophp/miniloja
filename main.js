@@ -30,9 +30,7 @@ const items = [
 ]
 let carrinho = []
 let carrinhoEl = null
-let comprar = (id) => {
-
-}
+let comprar = (id) => {}
 
 const Main = (app) => {
     
@@ -44,7 +42,6 @@ const Main = (app) => {
             alert('Produto não encontrado!');
             return
         }
-        console.log({ pos })
         let item = items[pos]
         let posCar = carrinho.findIndex(c => c.id == id);
         if (posCar === -1) {
@@ -74,7 +71,6 @@ const Main = (app) => {
         return t
     }
     function montaCarrinho (carrinhoEl) {
-        console.log(carrinhoEl)
         carrinhoEl.innerHTML = `
         <h1>Carrinho</h1>
         <table border="1" style="width: 100%; border: 1px #000 solid;">
@@ -96,8 +92,6 @@ const Main = (app) => {
         </tr>
         </table>`;
         
-        // carrinhoEl.innerHTML += `</table>`;
-        console.log(carrinhoEl)
     }
     function montaHTML(app) {
         let produtos = document.createElement('div');
