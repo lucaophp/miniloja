@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini Loja</title>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+    <script src="main.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #app {
+            width: 800px;
+            margin: auto;
+        }
+        #produtos {
+            
+            flex-direction: row;
+            flex: content;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #produtos .produto {
+            flex-basis: auto;
+            flex-wrap: wrap;
+            max-width: 300px;
+            max-height: 300px;
+            overflow: hidden;
+            align-self: center;
+            flex-direction: column;
+            display: flex;
+        }
+        #produtos .produto .fotoproduto {
+            min-width: 150px;
+            max-width: 150px;
+            min-height: 150px;
+            display: inline;
+        }
+        #produtos .produto .titulo {
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px 10px 0px;
+        }
+        #produtos .produto .valor {
+            color: red;
+            font-weight: bold;
+            font-size: large;
+        }
+        #produtos .produto .comprar button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</html>
